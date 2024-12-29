@@ -19,16 +19,3 @@ spec:
                    ports:
                      - containerPort: 80
 
-
-
-# Instructions to Use:
-
-- Create a file replicationcontroller.yml.
-- To create pod using that file:
-kubectl apply -f replicationcontroller.yml
-- To view list of pods:
-kubectl get pods
-- To view list of Replication  Controllers
-kubectl get replicationcontroller
-- To scale:
-kubectl scale replicationcontroller myreplicationcontroller --replicas=6 
