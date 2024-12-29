@@ -15,6 +15,3 @@ spec:
         restartPolicy: Never
    backoffLimit: 4
 
-
-- To view list of jobs:
-kubectl get jobs
