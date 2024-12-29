@@ -1,5 +1,3 @@
-# replicaset.yml:
-
 apiVersion: apps/v1
 kind: ReplicaSet
 metadata:
@@ -21,17 +19,3 @@ spec:
                      - containerPort: 80
 
 
-# Instructions to Use:
-
-- Create 3 files
-1) replicaset1.yml : name: myreplicationcontroller and lable env=dev
-2) replicaset2.yml : name: myreplicationcontroller1 and lable env=prod
-3) replicaset3.yml : name: myreplicationcontroller2 and lable env=testing
-- Create pods using above files:
-kubectl apply -f replicaset1.yml
-kubectl apply -f replicaset2.yml
-kubectl apply -f replicaset3.yml
-- To view list of pods:
-kubectl get pods
-- To view two pods with different lables:
-kubectl get pods --selector 'env in (dev,testing)'
