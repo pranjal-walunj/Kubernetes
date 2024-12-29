@@ -1,4 +1,4 @@
-# myservice.yml:
+myservice.yml:
 
 apiVersion: v1
 kind: Service
@@ -13,12 +13,3 @@ spec:
      port: 80
      targetPort: 80
      nodePort: 30001
-
-
-# Instructions to Use:
-
-- Create a myservice.yml file.
-- To create service using that file:
-kubectl apply -f myservice.yml
-- To view list of services:
-kubectl get services
