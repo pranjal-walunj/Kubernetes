@@ -1,6 +1,6 @@
  # mysql.yml file:
 
- apiVersion: v1
+apiVersion: v1
 kind: Pod
 metadata:
   name: mysqlwala
